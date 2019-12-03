@@ -30,7 +30,7 @@ under the License.
 	<packaging>jar</packaging>
 
 	<properties>
-		<flink.version>1.6.1</flink.version>
+		<flink.version>1.8.0</flink.version>
 	</properties>
 
 	<dependencies>
@@ -42,6 +42,21 @@ under the License.
 		<dependency>
 			<groupId>org.apache.flink</groupId>
 			<artifactId>flink-cep_2.11</artifactId>
+			<version>${flink.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>com.alibaba</groupId>
+			<artifactId>QLExpress</artifactId>
+			<version>3.2.0</version>
+		</dependency>
+        <dependency>
+            <groupId>com.alibaba</groupId>
+            <artifactId>fastjson</artifactId>
+            <version>1.2.62</version>
+        </dependency>
+		<dependency>
+			<groupId>org.apache.flink</groupId>
+			<artifactId>flink-connector-kafka_2.11</artifactId>
 			<version>${flink.version}</version>
 		</dependency>
 	</dependencies>
